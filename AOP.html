@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOP</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let func = function(){
+        console.log(2);
+    }
+
+    Function.prototype.before = function(func){
+        let self = this;
+        console.log(self)
+        return function(){
+            func.apply(self, arguments);
+            return self.apply(self, arguments);
+        }
+    }
+
+    Function.prototype.after = function(func){
+        let self = this;
+        return function(){
+            var ret = self.apply(self, arguments);
+            func.apply(self, arguments);
+            return ret;
+        }
+    }
+
+    func = func.before((a=1) => {
+        console.log(a)
+    }).after((b=3) => {
+        console.log(b);
+    })
+    func()
+</script>
+</html>

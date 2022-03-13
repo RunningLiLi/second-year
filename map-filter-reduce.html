@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sickness</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //map
+    Array.prototype.Mymap = function(fn, context) {
+        let newarr = []
+        const self = this
+        if (typeof fn !== 'function') {
+            return ('请传入函数')
+        }
+        self.forEach((item) => {
+            newarr.push(fn.call(self, item)) 
+        })
+        return newarr
+    }
+    //fliter
+    Array.prototype.Myfilter = function(fn){
+        if(!Array.isArray(this)){
+            return '要是数组才行';
+        }
+        let i=0,len= this.length,newarr=[];
+        for(i;i<len;i++){
+            if(fn(this[i],i,this)){
+               newarr.push(this[i])     
+            }
+        }
+        return newarr;
+    }
+    //reduce
+    Array.prototype.myReduce=function(callback,initialValue){
+    if(typeof callback !=='function'){
+        throw Error("请传入函数");
+    }
+    const array = this;
+    let pre = initialValue?initialValue:1;
+    for(let i=0;i<array.length;i++){
+        pre = callback(pre,array[i],i,array);
+    }
+    return pre;
+    }
+</script>
+</html>
