@@ -1,12 +1,17 @@
-import fetch from 'node-fetch';
+
+import xmlhttpRequest from 'xmlhttprequest';
+const XMLHttpRequest= xmlhttpRequest.XMLHttpRequest;
 function myaxios(config){
-    const {url='',method=''}=config
-    return new Promise((resolve,reject)=>{
-        fetch(url,{
-            method,
-        }).then((res)=>{
-            resolve(res)
-        })
+    return new Promise((resolve) => {
+        const {url='',method=''} = config; 
+        const xhr = new XMLHttpRequest;    
+        xhr.open(method,url,true); 
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState == 4 && xhr.status == 200){
+                resolve(xhr.responseText);
+            }
+        }
+        xhr.send();
     })
 }
 myaxios({
