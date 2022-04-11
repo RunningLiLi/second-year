@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header class="header">
+        <div><a href="index.html" title="网易云音乐">网易云音乐<img src="81a32173bb6ccaa5f0f6.png" alt="加载失败"></a></div>
+        <ul>
+            <li class="findmusic">发现音乐</li>
+            <li class="mymusic">我的音乐</li>
+            <li>关注</li>
+            <li>商城</li>
+            <li>音乐人</li>
+            <li class="hot">下载客户端 <img src="a14fb8cbd6003d5319ed.png" alt="hot"></li>
+        </ul>
+        <div class="search-div">
+            <div class="lr"></div>
+            <input type="text" class="search-input">
+            <div class="rr"></div>
+            <div class="searchhot">
+                <div class="hotword">热搜榜</div>
+
+            </div>
+        </div>
+        <button class="creator">创作者中心</button>
+        <span id="picture-span"><a href="#" class="load">登录</a></span>
+    </header>
+    <div class="shortcut-div">
+        <ul class="shortcut-ul">
+            <li><a href="#" class="recommandation">推荐</a></li>
+            <li><a href="#">排行榜</a></li>
+            <li><a href="#" class="song-sheet">歌单</a></li>
+            <li><a href="#">主播电台</a></li>
+            <li><a href="#">歌手</a></li>
+            <li><a href="#">新碟上架</a></li>
+        </ul>
+    </div>
+    <div class="circle-bigdiv">
+        <img src="271b5ecd7d2eda13a198.jpg" alt="" class="circle-backgruand1">
+        <img src="271b5ecd7d2eda13a198.jpg" alt="" class="circle-backgruand">
+        <div class="circle-div">
+            <ul class="point">
+            </ul>
+            <div class="left" id="left">&lt;</div>
+            <div class="right" id="right">></div>
+            <ul class="circle-ul">
+                <li><a href="#"><img src="271b5ecd7d2eda13a198.jpg" alt=""></a></li>
+                <li><a href="#"><img src="3b2127bc006f68920629.jpg" alt=""></a></li>
+                <li><a href="#"><img src="d49bf94c7591abd7b825.jpg" alt=""></a></li>
+                <li><a href="#"><img src="4b844379b4694f2c4d32.jpg" alt=""></a></li>
+                <li><a href="#"><img src="7c5719a68e844012dd00.jpg" alt=""></a></li>
+                <li><a href="#"><img src="9b68aeca72b3b8de417e.jpg" alt=""></a></li>
+                <li><a href="#"><img src="ea2c43e23cdfab0a9bfc.jpg" alt=""></a></li>
+                <li><a href="#"><img src="c62fb1fe4ac0e51b8748.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="load-div" style="white-space: nowrap;">
+        <div class="load-header"><span class="load-header-span">手机号登录</span> <span class="load-stop">×</span></div>
+        <div class="load-div2">
+            <input type="text" placeholder="请输入手机号码" class="load-tel" value="">
+            <input type="text" placeholder="请输入验证码" class="load-code">
+            <button class="load-VerificationCode">获取验证码</button>
+            <a class="load-password">密码登录</a>
+            <span class="load-checkbox"><input type="checkbox"><a>自动登录</a></span>
+            <button class="load-load">登录</button>
+        </div>
+        <div class="load-resister-div">
+            <span class="span-tel">手机号：</span><input type="text" placeholder="请输入手机号" class="input-tel">
+            <span class="span-password">密码:</span><input type="password" placeholder="设置登录密码，不少于8位"
+                class="input-password">
+            <button class="load-load2">下一步</button>
+        </div>
+        <div class="register-code">
+            <div class="register-div-tel">你的手机号:<span class="register-tel"></span><br />为了安全,我们会给你发送短信验证码</div>
+            <div class="register-4input">
+                <input type="text" class="input1">
+                <input type="text" class="input2">
+                <input type="text" class="input3">
+                <input type="text" class="input4">
+            </div>
+            <button class="load-load3">下一步</button>
+        </div>
+        <div class="welcome">
+            <span class="span-name">取一个昵称，让大家记住你</span>
+            <input type="text" class="name" placeholder="昵称不少于4个字">
+            <button class="begain">还等啥?还不速速开启网易云生活！</button>
+        </div>
+        <div class="load-register"><a class="load-register-a">没有账号？免费注册 ></a></div>
+    </div>
+    <div class="hotsong">
+        <div class="hotsong-head">
+            <span class="hotsong-ico">&nbsp;热门推荐</span>
+            <ul class="hotsong-class">
+                <li>华语</li>
+                <li></li>
+                <li>流行</li>
+                <li></li>
+                <li>摇滚</li>
+                <li></li>
+                <li>民谣</li>
+                <li></li>
+                <li>电子</li>
+            </ul>
+            <span class="hotsong-stop">更多</span>
+            <hr style="height:1px;border:none;border-top:2px solid #d33131;margin-top: -4px;" />
+        </div>
+        <div class="personality">
+            <div class="presonality-picture"></div>
+            <a href="#" class="presonality-name"></a>
+            <button class="presonality-Grade">Lv.10</button>
+            <button class="presonality-sign">签到</button>
+            <div class="presonality-divulli">
+                <ul>
+                    <li><span style="font-size: large;color: rgb(85, 83, 83);"
+                            class="presonality-dynamic"></span><br>动态</li>
+                    <li>|<br>|<br>|</li>
+                    <li><span style="font-size: large;color: rgb(85, 83, 83);"
+                            class="presonality-attention"></span><br>关注</li>
+                    <li>|<br>|<br>|</li>
+                    <li><span style="font-size: large;color: rgb(85, 83, 83);" class="presonality-fan"></span><br>粉丝
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hotsong-body">
+            <span class="r0">
+                <div></div>
+            </span><span class="r1">
+                <div></div>
+            </span><span class="r2">
+                <div></div>
+            </span><span class="r3">
+                <div></div>
+            </span><br>
+            <span class="r4" style="margin-top: 100px;">
+                <div></div>
+            </span><span class="r5" style="margin-top: 100px;">
+                <div></div>
+            </span><span class="r6" style="margin-top: 100px;">
+                <div></div>
+            </span><span class="r7" style="margin-top: 100px;">
+                <div></div>
+            </span>
+        </div>
+    </div>
+    <div class="songsheet-div">
+        <div class="songsheet-head"><span class="songsheet-head-span">全部</span><button
+                class="songsheet-head-class">选择分类</button><button class="songsheet-head-hotdoor">热门</button></div>
+        <hr style="height:1px;width: 970px; border:none;border-top:2px solid #d33131;margin-top: 5px;" />
+        <div class="songsheet-body"></div>
+        <div class="songsheet-tail">
+            <button class="tail-left">上一页</button>
+            <div style="display: inline-block;">
+                <ul class="tail-ul">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+            <button class="tail-right">下一页</button>
+        </div>
+    </div>
+    <div class="detail-div" style="display: none;">
+        <div class="detail-div2">
+            <div class="detail-div-header">
+                <div class="header-portrait-left"><img class="header-portrait-left-img"></div>
+                <div class="header-right">
+                    <div class="header-right-header">
+                        <img src="820bad8380407d15372b.png" alt="">
+                        <span class="header-right-header-span"></span>
+                    </div>
+                    <div class="header-right-person-time">
+                        <img class="header-right-person-time-img">
+                        <a class="header-right-person-time-a"></a>
+                        <span class="header-right-person-time-span"></span>
+                    </div>
+                    <div class="header-right-buttons">
+                        <button class="buttons-play">播放</button>
+                        <button class="buttons-add">+</button>
+                        <button class="buttons-collection"></button>
+                        <button class="buttons-share"></button>
+                        <button class="buttons-download">下载</button>
+                        <button class="buttons-command"></button>
+                    </div>
+                    <div class="header-right-tags">
+                        <span>标签:</span>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="header-right-introduce">
+                        <span></span>
+                    </div>
+                    <div class="open">
+                        <a class="open-a">展开</a>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-div-body">
+                <div class="detail-div-body-header">
+                    <span>歌曲列表</span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <hr style="height:1px;width: 800px; border:none;border-top:2px solid #d33131;margin-top: -3px;" />
+                <div class="detail-div-body-songlist">
+                    <div>
+                        <table>
+                            <thead>
+                                <tr class="body-songlist-tr">
+                                    <th>&nbsp;</th>
+                                    <th>歌曲标题</th>
+                                    <th>时长</th>
+                                    <th>歌手</th>
+                                    <th>专辑</th>
+                                </tr>
+                            </thead>
+                            <tbody class="songlist-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="songdetail">
+            <div class="songdetaildivimg">
+                <div class="songdetaildivimg2">
+                    <img class="songdetail-img">
+                </div>
+                <div class="songdetail-title">
+                    <div class="songname"></div>
+                    <div class="songsheetname"></div>
+                </div>
+                <div class="songdetail-words">
+                    <div class="songdetail-wordsreally"></div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-command">
+            <div class="detail-command-common">
+                <span class="bigcommmand">评论</span><span class="commandtogether"></span>
+            </div>
+            <hr style="width: 800px;border: 1px solid crimson;height: 0px;background-color: crimson;">
+            <div class="command-maself"></div>
+            <div class="command-body-good">
+                <span style="font-size: 10px; font-weight:700;" class="jingcai">精彩评论</span>
+                <hr
+                    style="width: 800px;border: 1px solid rgb(172, 168, 168);margin-top: 5px;background-color: rgb(172, 168, 168);">
+                <div class="command-body-body">
+                </div>
+            </div>
+            <div class="command-body-common">
+                <span style="font-size: 10px; font-weight:700;" class="jingcai">最新评论</span><span
+                    class="together2"></span>
+                <hr
+                    style="width: 800px;border: 1px solid rgb(172, 168, 168);margin-top: 5px;background-color: rgb(172, 168, 168);">
+                <div class="command-body-body2">
+                </div>
+                <div class="commandbuttons">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls" style="display:none">
+        <div class="controls-small">
+            <div class="controls-left"></div>
+            <div class="controls-play"></div>
+            <div class="controls-right"></div>
+            <div class="controls-img" title="展开音乐详情页">
+                <img>
+                <div class="imgfloat"></div>
+            </div>
+            <div class="controls-progressbar">
+                <div class="controls-progressbar-one">
+                    <span></span><span></span>
+                </div>
+                <div class="controls-progressbar-two">
+                    <div class="controls-progressbar-two-long">
+                        <div class="controls-progressbar-really">
+                            <div class="controls-progressbar-two-circle1">
+                                <div class="controls-progressbar-two-circle2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls-time">
+                    <span class="controls-time1">00:00</span>
+                    <span class="controls-time2"></span>
+                </div>
+                <div class="controls-div1"><span></span><span></span><span></span></div>
+                <div class="controls-div2">
+                    <span class="volumeico"></span>
+                    <span>
+                        <div class="volumediv" id="volumediv">
+                            <div id="volume-long">
+                                <div id="volume-really">
+                                    <div id="volume-bigc">
+                                        <div id="volume-smallc"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span></span>
+                </div>
+            </div>
+            <audio></audio>
+        </div>
+    </div>
+    <div class="searchbigdiv">
+        <span class="searchhh"></span>
+        <div class="searchbody">
+       
+        </div> 
+    </div>
+    
+    <div class="mymusicbigdiv">
+        <div class="mymusicsidebar">
+        </div>
+        <div class="mymusicsongsheet">
+         <div class="mymusichead">
+            <div class="header-portrait-left"><img class="header-portrait-left-img"></div>
+            <div class="header-right">
+                <div class="header-right-header">
+                    <img src="820bad8380407d15372b.png" alt="">
+                    <span class="header-right-header-span"></span>
+                </div>
+                <div class="header-right-person-time">
+                    <img class="header-right-person-time-img">
+                    <a class="header-right-person-time-a"></a>
+                    <span class="header-right-person-time-span"></span>
+                </div>
+                <div class="header-right-buttons">
+                    <button class="buttons-play">播放</button>
+                    <button class="buttons-add">+</button>
+                    <button class="buttons-collection"></button>
+                    <button class="buttons-share"></button>
+                    <button class="buttons-download">下载</button>
+                    <button class="buttons-command"></button>
+                </div>
+                <div class="header-right-tags">
+                    <span>标签:</span>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <div class="header-right-introduce">
+                    <span></span>
+                </div>
+                <div class="open">
+                    <a class="open-a">展开</a>
+                </div>
+            </div>
+         </div>
+         <div class="mymusicbody">
+              <div class="detail-div-body-header">
+                    <span>歌曲列表</span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <hr style="height:1px;width: 800px; border:none;border-top:2px solid #d33131;margin-top: -3px;" />
+                <div class="detail-div-body-songlist">
+                    <div>
+                        <table>
+                            <thead>
+                                <tr class="body-songlist-tr">
+                                    <th>&nbsp;</th>
+                                    <th>歌曲标题</th>
+                                    <th>时长</th>
+                                    <th>歌手</th>
+                                    <th>专辑</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="mymusicsonglist">
+                        </div>
+                    </div>
+                </div>
+         </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

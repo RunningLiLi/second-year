@@ -1,0 +1,77 @@
+.songdetail{
+    position: relative;
+    display: none;
+    top: 30px;
+    left: 50px;
+    bottom: 10px;
+    width: 800px;
+    height: 500px;
+    
+}
+.songdetaildivimg{
+    position: absolute;
+    top: 125px;
+    width: 250px;
+    height: 250px;
+}
+.songdetaildivimg2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.songdetail-img{
+    width: 250px;
+    height: 250px;
+}
+.songdetail-title{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    left: 410px;
+    top: -100px;
+   
+}
+.songname{
+position: absolute;
+top: 0;
+left: -250px;
+width: 700px;
+height: 40px;
+
+font-size: 30px;
+line-height: 30px;
+text-align: center;
+font-weight: 300;
+}
+.songsheetname{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 20px; 
+    font-size: 15px;
+
+    color: rgb(117, 116, 116);
+    line-height: 20px;
+    text-align: center;
+}
+.songdetail-words{
+    position: absolute;
+    width: 400px;
+    height: 330px;
+    left: 315px;
+    top: -20px;
+    overflow: hidden;
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.songdetail-wordsreally{
+    position: absolute;
+    width: 400px;
+    height: 330px;
+    text-align: center;
+    top: 0px;
+}
